@@ -1,0 +1,129 @@
+# 敏感信息和配置文件
+.env
+.env.local
+.env.production
+.env.staging
+config.ini
+secrets.json
+
+# Python 相关
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虚拟环境
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# IDE 和编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 日志文件
+*.log
+logs/
+*.log.*
+
+# 数据文件和缓存
+*.db
+*.sqlite
+*.sqlite3
+data/
+cache/
+temp/
+tmp/
+
+# 模型文件 (通常很大，不应提交到Git)
+*.pth
+*.pkl
+*.model
+*.bin
+models/
+checkpoints/
+
+# 输出文件
+output/
+outputs/
+results/
+processed/
+
+# PDF 文件和大型数据文件
+*.pdf
+*.zip
+*.tar.gz
+*.rar
+
+# 图像文件
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# 测试覆盖率报告
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# 系统文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# 临时文件
+*.tmp
+*.temp
+
+# 进程相关
+*.pid
+*.lock
+
+# 特定于项目的排除
+announcement_document_processing/
+downloaded_pdfs/
+run_all_announcement_scripts.log
+process_pdfs.log
+extract_text_onlyvactor.log
+table_processing_vactor_multifile.log
+table_processing_scan_multifile.log
+table_detection.log
+not_table_detection.log
+merge.log
+text_segmentation.log
+embedding.log
+es_database.log
+vector_database.log
+vector_database.jog

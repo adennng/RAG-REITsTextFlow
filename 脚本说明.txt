@@ -1,0 +1,63 @@
+step1_process_pdfs.py 
+#找到本轮需要处理的pdf,更新至数据库 announcement.processed_files
+#process_pdfs.log
+
+
+step2_extract_text_onlyvactor_multi_process.py 
+#提取文件文本，只提取适量页，扫描页仅转图片
+#extract_text_onlyvactor.log
+
+
+step3_1_detection_vactor_multi_process.py  
+#矢量页跨页表格检测
+#table_processing_vactor_multifile.log
+
+step3_2_table_detection_scan_multifile.py 
+#扫描页跨页表格检测
+#table_processing_scan_multifile.log
+
+
+step4_1_1_describe_table_images_multi_thread.py 
+#表格图片描述主脚本
+#table_detection.log
+
+
+step4_1_2_describe_table_images_multi_thread_second.py 
+# 表格图片描述第二次处理主脚本
+#table_detection.log
+
+
+step4_2_1_describe_not_table_images_llm.py 
+# 非表格图片描述的主脚本——llm版
+#not_table_detection.log
+
+
+step4_2_2_describe_not_table_images_llm_second.py 
+# 非表格图片第二次描述的主脚本——LLM版
+#not_table_detection.log
+
+
+step5_merge_table_into_text.py 
+# 表格页描述替换至全文文字里
+#merge.log
+
+
+step6_text_segmentation.py 
+# 文本切分，结果保存至 mysql 表 text_segmentation_embedding 里（和 {pdf_folder_name}_text_segmentation.json 里）
+#text_segmentation.log
+
+
+
+step7_text_embedding.py 
+# 将 mysql 数据库中表 text_segmentation_embedding 的 text 转为向量保存至 “embedding” 字段
+#embedding.log
+
+
+step8_1_ingest_elasticsearch_data.py 
+# 将 mysql 表 text_segmentation_embedding 中信息导入 elasticsearch 里
+#es_database.log
+
+
+step8_2_ingest_vector_database.py 
+# 将 mysql 数据库表 text_segmentation_embedding 中信息导入至向量数据库
+#vector_database.jog
