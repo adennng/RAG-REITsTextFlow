@@ -1,0 +1,89 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.sqlite3
+
+# 环境配置文件(如果使用.env方式)
+.env
+.env.local
+
+# 输出和临时文件
+output/
+tmp/
+temp/
+*.tmp
+
+# PDF文件和处理结果(根据需要调整)
+downloaded_pdfs/
+processed_output/
+*.pdf
+
+# 图片文件
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+
+# 模型文件
+*.model
+*.pkl
+*.pickle
+models/
+
+# 测试覆盖率
+.coverage
+htmlcov/
+.pytest_cache/
+
+# 操作系统
+Thumbs.db
+.DS_Store
